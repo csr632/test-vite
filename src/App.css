@@ -1,0 +1,7 @@
+@font-face {
+  font-family: NextIcon;
+  src: url("//at.alicdn.com/t/font_1435786_mueafw9pwd.woff2") format("woff2"); }
+
+.App {
+  font-family: NextIcon;
+}
