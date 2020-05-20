@@ -1,10 +1,13 @@
 import React from "react";
 import "./App.css";
 
-import { Button } from "@alicloud/console-components";
+import { Button, DatePicker } from "@alicloud/console-components";
 import AppLayout from "@alicloud/console-components-app-layout";
+import Page from "@alicloud/console-components-page";
 import ConsoleMenu from "@alicloud/console-components-console-menu";
 import "@alicloud/console-components/dist/wind.css";
+import moment from "moment";
+console.log(moment)
 
 const menuItems = [
   {
@@ -35,8 +38,18 @@ function App() {
   return (
     <div className="App">
       <AppLayout nav={<ConsoleMenu items={menuItems} header="页面一级导航" />}>
-        页面内容：
-        <Button type="primary">使用Button</Button>
+        <Page>
+          <Page.Header>页面内容</Page.Header>
+          <Page.Content>
+            <div>
+              <Button type="primary">使用Button</Button>
+            </div>
+            <div>
+              使用DatePicker：
+              <DatePicker></DatePicker>
+            </div>
+          </Page.Content>
+        </Page>
       </AppLayout>
     </div>
   );
