@@ -11,7 +11,10 @@ module.exports = {
     // https://github.com/alibaba-fusion/next/issues/1862
     treeshake: false,
   },
-  rollupCommonjsPluginNamedExports: {
-    "react-sizeme": ["SizeMe"]
-  }
+  rollupPluginCommonJSNamedExports: {
+    "react-sizeme": ["SizeMe"],
+  },
+  optimizeDeps: {
+    commonJSWhitelist: ["moment"],
+  },
 };
