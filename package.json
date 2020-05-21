@@ -2,21 +2,13 @@
   "name": "test-vite",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite serve src",
+    "dev": "npm run clean && vite serve src",
     "debug": "npx --node-arg=--inspect vite serve src --debug",
     "clean": "rm -rf node_modules/.vite_opt_cache",
     "build": "vite build src --outDir dist "
   },
   "dependencies": {
-    "@alicloud/console-components": "^1.0.25-alpha.0",
-    "@alicloud/console-components-app-layout": "^1.0.8",
-    "@alicloud/console-components-console-menu": "^1.0.7",
-    "@alicloud/console-components-page": "^1.0.11",
-    "@alifd/next": "^1.20.5",
-    "@pika/react": "^16.13.1",
-    "@pika/react-dom": "^16.13.1",
-    "moment": "^2.26.0",
-    "styled-components": "^5.1.0"
+    "test-package": "link:./test-package"
   },
   "devDependencies": {
     "vite": "^0.16.4"

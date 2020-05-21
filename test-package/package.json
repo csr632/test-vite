@@ -1,0 +1,6 @@
+{
+  "name": "test-package",
+  "version": "1.0.0",
+  "main": "es/index.js",
+  "license": "MIT"
+}
