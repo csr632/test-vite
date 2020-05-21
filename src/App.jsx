@@ -7,7 +7,7 @@ import Page from "@alicloud/console-components-page";
 import ConsoleMenu from "@alicloud/console-components-console-menu";
 import "@alicloud/console-components/dist/wind.css";
 import moment from "moment";
-console.log(moment)
+console.log(moment);
 
 const menuItems = [
   {
@@ -34,25 +34,33 @@ const menuItems = [
   },
 ];
 
+const { Breadcrumb } = Page;
+const breadcrumb = (
+  <Breadcrumb>
+    <Breadcrumb.Item>Home</Breadcrumb.Item>
+    <Breadcrumb.Item>Blog</Breadcrumb.Item>
+    <Breadcrumb.Item>Name It, and They Will Come</Breadcrumb.Item>
+  </Breadcrumb>
+);
+
 function App() {
   return (
     <div className="App">
       <AppLayout nav={<ConsoleMenu items={menuItems} header="页面一级导航" />}>
         <Page>
-          <Page.Header>页面内容</Page.Header>
+          <Page.Header title="页面内容" breadcrumb={breadcrumb}></Page.Header>
           <Page.Content>
             <div>
               <Button type="primary">使用Button</Button>
             </div>
-            <div>
-              使用DatePicker：
-              <DatePicker></DatePicker>
-            </div>
+            <div>：：：</div>
           </Page.Content>
         </Page>
       </AppLayout>
     </div>
   );
 }
+
+console.log("：");
 
 export default App;
