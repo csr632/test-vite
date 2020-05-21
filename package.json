@@ -19,6 +19,7 @@
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
+    "@rollup/plugin-replace": "^2.3.2",
     "vite": "^0.16.4"
   }
 }

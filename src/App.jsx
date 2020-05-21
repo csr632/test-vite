@@ -53,7 +53,10 @@ function App() {
             <div>
               <Button type="primary">使用Button</Button>
             </div>
-            <div>：：：</div>
+            <div style={{ marginTop: "24px" }}>
+              使用DatePicker
+              <DatePicker />
+            </div>
           </Page.Content>
         </Page>
       </AppLayout>
