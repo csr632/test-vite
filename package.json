@@ -11,6 +11,6 @@
     "test-package": "link:./test-package"
   },
   "devDependencies": {
-    "vite": "^0.16.4"
+    "vite": "^0.16.6"
   }
 }
