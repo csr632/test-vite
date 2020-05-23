@@ -1,14 +1,12 @@
 import React from "react";
 import "./App.css";
 
-import { Button } from "@alifd/next";
+import test from "test-pkg";
+
+console.log(test);
 
 function App() {
-  return (
-    <div className="App">
-      <Button type="primary">Hello</Button>
-    </div>
-  );
+  return <div className="App">hello</div>;
 }
 
 export default App;

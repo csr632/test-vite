@@ -2,17 +2,16 @@
   "name": "test-vite",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite serve src",
+    "dev": "vite serve src --force",
     "debug": "npx --node-arg=--inspect vite serve src --debug",
     "clean": "rm -rf node_modules/.vite_opt_cache",
     "build": "vite build src --outDir dist "
   },
   "dependencies": {
-    "@alifd/next": "^1.20.6",
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1",
     "moment": "^2.26.0",
-    "styled-components": "^5.1.0"
+    "test-pkg": "link:./test-pkg"
   },
   "devDependencies": {
     "@rollup/plugin-replace": "^2.3.2",
