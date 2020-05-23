@@ -12,7 +12,7 @@
     "@alicloud/console-components-app-layout": "^1.0.8",
     "@alicloud/console-components-console-menu": "^1.0.7",
     "@alicloud/console-components-page": "^1.0.11",
-    "@alifd/next": "^1.20.5",
+    "@alifd/next": "^1.20.6",
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1",
     "moment": "^2.26.0",
@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "@rollup/plugin-replace": "^2.3.2",
-    "vite": "^0.16.4"
+    "vite": "^0.16.7"
   }
 }
