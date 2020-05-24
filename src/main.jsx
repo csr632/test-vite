@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import Doc from './Doc.mdx'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Doc />
   </React.StrictMode>,
   document.getElementById('root')
 )

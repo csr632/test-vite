@@ -2,17 +2,19 @@
   "name": "test-vite",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite serve src",
-    "debug": "npx --node-arg=--inspect vite serve src --debug",
+    "dev": "vite serve src --force",
+    "debug": "npx --node-arg=--inspect vite serve src --force",
     "clean": "rm -rf node_modules/.vite_opt_cache",
     "build": "vite build src --outDir dist"
   },
   "dependencies": {
+    "@mdx-js/react": "^1.6.4",
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
+    "@mdx-js/mdx": "^1.6.4",
     "vite": "^0.16.7",
     "vite-plugin-react": "^1.1.2"
   }
