@@ -1,4 +1,5 @@
 import * as vpr from "vite-plugin-react";
+import { transformUtil } from "vite-plugin-react/dist/transform";
 import * as mdx from "@mdx-js/mdx";
 import type { UserConfig } from "vite";
 
@@ -26,7 +27,7 @@ module.exports = {
           target: "es2019",
           jsxFactory: "mdx",
         });
-        const result = `${DEFAULT_RENDERER}\n${js}`;
+        const result = transformUtil(`${DEFAULT_RENDERER}\n${js}`, path);
         return result;
       },
     },
