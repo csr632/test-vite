@@ -24,6 +24,7 @@ module.exports = {
         const { js } = await esBuild.transform(jsx, {
           loader: "jsx",
           target: "es2019",
+          jsxFactory: "mdx",
         });
         const result = `${DEFAULT_RENDERER}\n${js}`;
         return result;
