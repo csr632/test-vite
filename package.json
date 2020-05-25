@@ -2,8 +2,8 @@
   "name": "test-vite",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite serve src",
-    "debug": "npx --node-arg=--inspect vite serve src --debug",
+    "dev": "vite serve src --force",
+    "debug": "npx --node-arg=--inspect vite serve src --force",
     "clean": "rm -rf node_modules/.vite_opt_cache",
     "build": "vite build src --outDir dist"
   },
@@ -13,7 +13,7 @@
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
-    "vite": "^0.16.7",
+    "vite": "^0.16.10",
     "vite-plugin-react": "^1.1.2"
   }
 }
