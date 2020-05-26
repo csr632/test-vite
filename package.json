@@ -11,11 +11,11 @@
     "@mdx-js/react": "^1.6.4",
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@mdx-js/mdx": "^1.6.4",
-    "vite": "^0.16.7",
-    "vite-plugin-react": "^1.1.2"
+    "vite": "^0.17.0",
+    "vite-plugin-react": "^2.0.0"
   }
 }
