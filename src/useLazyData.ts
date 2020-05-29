@@ -9,3 +9,9 @@ export function useLazyData() {
   }, []);
   return data;
 }
+
+if (import.meta.hot) {
+  import.meta.hot.acceptDeps("./lazy-data", (lazyData) => {
+    console.log("hmr lazy data:", lazyData);
+  });
+}
