@@ -1,20 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import Counter from "./Counter";
-
-import styled from "styled-components";
-
-const Box = styled.div`
-  border: 1px solid red;
-`;
 
 function App() {
+  const [componentName, setComponentName] = useState<
+    "component1" | "component2"
+  >("component1");
+  const Component = useLoadComponent(`/${componentName}.tsx`);
   return (
-    <Box className="App">
-      <p>Box2</p>
-      <Counter />
-    </Box>
+    <div className="App">
+      <button
+        onClick={() => {
+          setComponentName("component1");
+        }}
+      >
+        show component1
+      </button>
+      <button
+        onClick={() => {
+          setComponentName("component2");
+        }}
+      >
+        show component2
+      </button>
+      <div>{Component ? <Component /> : "Loading..."}</div>
+    </div>
   );
 }
 
 export default App;
+
+function useLoadComponent(path: string) {
+  const [Component, setComponent] = useState<null | React.ComponentType>(null);
+  useEffect(() => {
+    import(path).then(({ default: def }) => {
+      setComponent(() => def);
+    });
+  }, [path]);
+  return Component;
+}
