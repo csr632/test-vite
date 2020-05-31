@@ -1,5 +1,7 @@
 import React from "react";
 
-export default () => {
+const Component1: React.FC = () => {
   return <p>Component 1</p>;
 };
+
+export default Component1;
