@@ -1,9 +1,6 @@
 module.exports = {
-  alias: {
-    react: "@pika/react",
-    "react-dom": "@pika/react-dom",
-  },
   jsx: "react",
+  plugins: [require('vite-plugin-react')],
   optimizeDeps: {
     auto: false,
   },

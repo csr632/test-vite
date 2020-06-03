@@ -8,9 +8,10 @@
     "build": "vite build src --outDir dist "
   },
   "dependencies": {
-    "test-package": "link:./test-package"
+    "test-package": "link:./test-package",
+    "vite-plugin-react": "^2.0.3"
   },
   "devDependencies": {
-    "vite": "^0.16.6"
+    "vite": "^0.20.2"
   }
 }
