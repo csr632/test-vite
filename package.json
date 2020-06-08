@@ -19,7 +19,7 @@
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.0",
-    "vite": "^0.20.5",
+    "vite": "^0.20.6",
     "vite-plugin-react": "^2.0.3"
   }
 }

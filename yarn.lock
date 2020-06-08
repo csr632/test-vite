@@ -298,10 +298,10 @@
   resolved "https://registry.yarnpkg.com/@pika/react/-/react-16.13.1.tgz#20e47997d2a2f1e5da39a8e28b75db2ec77d99c6"
   integrity sha512-v33Ub2QxntNpDFRnkj3tCbT6jMb7Etu7LOMQO/YAulLRIDtDvJdMwuOVJDdPYUmDtWjfWOB5xSP7nl7k0BApbQ==
 
-"@rollup/plugin-commonjs@^12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-commonjs/-/plugin-commonjs-12.0.0.tgz#e2f308ae6057499e0f413f878fff7c3a0fdc02a1"
-  integrity sha512-8+mDQt1QUmN+4Y9D3yCG8AJNewuTSLYPJVzKKUZ+lGeQrI+bV12Tc5HCyt2WdlnG6ihIL/DPbKRJlB40DX40mw==
+"@rollup/plugin-commonjs@^13.0.0":
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-commonjs/-/plugin-commonjs-13.0.0.tgz#8a1d684ba6848afe8b9e3d85649d4b2f6f7217ec"
+  integrity sha512-Anxc3qgkAi7peAyesTqGYidG5GRim9jtg8xhmykNaZkImtvjA7Wsqep08D2mYsqw1IF7rA3lYfciLgzUSgRoqw==
   dependencies:
     "@rollup/pluginutils" "^3.0.8"
     commondir "^1.0.1"
@@ -2700,13 +2700,13 @@ vite-plugin-react@^2.0.3:
     "@babel/core" "^7.9.6"
     react-refresh "^0.8.2"
 
-vite@^0.20.5:
-  version "0.20.5"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-0.20.5.tgz#e70bcf69f8c71f4f719bf5e60dc04ad2263f7d3f"
-  integrity sha512-5G0sRbTfF8y7Z+hNV0itOPLd8302kzaJFBEyeDr8NnKSN6X8CNIYiy6bGpg/YynUJplaUm6X6ZiGGSg+L1u1Hw==
+vite@^0.20.6:
+  version "0.20.6"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-0.20.6.tgz#16f2b86291cf9c08dd2ee157e3db691424359959"
+  integrity sha512-uS+1ke1L7LaETO9t8Qq7iNXabP11IlEmu1vO/Ne6c6aFzlW4M2jSsUWByDHi/PI4uw5iWhgpMfy6hmDtMJKusA==
   dependencies:
     "@babel/parser" "^7.9.4"
-    "@rollup/plugin-commonjs" "^12.0.0"
+    "@rollup/plugin-commonjs" "^13.0.0"
     "@rollup/plugin-json" "^4.0.3"
     "@rollup/plugin-node-resolve" "^8.0.0"
     "@types/koa" "^2.11.3"
