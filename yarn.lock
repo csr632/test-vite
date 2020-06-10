@@ -2700,10 +2700,10 @@ vite-plugin-react@^2.0.3:
     "@babel/core" "^7.9.6"
     react-refresh "^0.8.2"
 
-vite@^0.20.6:
-  version "0.20.6"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-0.20.6.tgz#16f2b86291cf9c08dd2ee157e3db691424359959"
-  integrity sha512-uS+1ke1L7LaETO9t8Qq7iNXabP11IlEmu1vO/Ne6c6aFzlW4M2jSsUWByDHi/PI4uw5iWhgpMfy6hmDtMJKusA==
+vite@^0.20.7:
+  version "0.20.7"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-0.20.7.tgz#703c2019d5479f1f6e8cbc7ad495b25b576f5cb6"
+  integrity sha512-uAdq3o0JTJXeN4VjSZPe+QC6FC0mo0J7S3AppwDBxLZ9TlP9SzoBrJy9IY1IPFYw9Yho4iovt2Qb1RH7vhtr2A==
   dependencies:
     "@babel/parser" "^7.9.4"
     "@rollup/plugin-commonjs" "^13.0.0"
