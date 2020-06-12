@@ -9,7 +9,6 @@
     "build": "vite build src --outDir dist"
   },
   "dependencies": {
-    "@alicloud/console-components": "^1.0.24",
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1",
     "moment": "^2.26.0",
@@ -20,7 +19,7 @@
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.0",
     "typescript": "^3.9.3",
-    "vite": "^0.19.1",
-    "vite-plugin-react": "^2.0.1"
+    "vite": "^0.20.7",
+    "vite-plugin-react": "^2.0.3"
   }
 }
