@@ -1,38 +1,67 @@
-import React, { useState, useEffect } from "react";
-import styled from "styled-components";
-// axios is a commonjs package
-import axios from "axios";
+import React from "react";
+import s from "./App.module.css";
 
-import "./App.css";
-import Counter from "./Counter";
+import ConsoleComponents from "@alicloud/console-components";
+import AppLayout from "@alicloud/console-components-app-layout";
+import Page from "@alicloud/console-components-page";
+import ConsoleMenu from "@alicloud/console-components-console-menu";
+import "@alicloud/console-components/dist/wind.css";
 
-const Box = styled.div`
-  border: 1px solid red;
-`;
+// TODO: esmodule interop
+const { Button, DatePicker } = ConsoleComponents;
+
+const menuItems = [
+  {
+    key: "overview",
+    label: "概览",
+  },
+  {
+    key: "lists",
+    label: "列表",
+    items: [
+      {
+        key: "basic-list-1",
+        label: "基础列表1",
+      },
+      {
+        key: "basic-list-2",
+        label: "基础列表2",
+      },
+    ],
+  },
+  {
+    key: "basic-form",
+    label: "基础表单",
+  },
+];
+
+const { Breadcrumb } = Page;
+const breadcrumb = (
+  <Breadcrumb>
+    <Breadcrumb.Item>Home</Breadcrumb.Item>
+    <Breadcrumb.Item>Blog</Breadcrumb.Item>
+    <Breadcrumb.Item>Name It, and They Will Come</Breadcrumb.Item>
+  </Breadcrumb>
+);
 
 function App() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    axios
-      .get("https://os.alipayobjects.com/rmsportal/ODDwqcDFTLAguOvWEolX.json")
-      .then((value) => {
-        setData(value.data[0].children[0]);
-      });
-  }, []);
-
   return (
-    <Box className="App">
-      <p>Box2</p>
-      <Counter />
-      <hr />
-      <p>Load data using axios:</p>
-      {data ? (
-        <pre>{JSON.stringify(data, null, 2)}</pre>
-      ) : (
-        <p>Loading data...</p>
-      )}
-    </Box>
+    <div>
+      <AppLayout nav={<ConsoleMenu items={menuItems} header="页面一级导航" />}>
+        <Page>
+          <Page.Header title="页面内容" breadcrumb={breadcrumb}></Page.Header>
+          <Page.Content>
+            <div className={s.box}>
+              <Button type="primary">使用Button</Button>
+            </div>
+            <div className={s.box}>
+              使用DatePicker
+              <DatePicker />
+            </div>
+          </Page.Content>
+        </Page>
+      </AppLayout>
+    </div>
   );
 }
 
