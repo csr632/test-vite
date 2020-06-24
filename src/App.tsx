@@ -7,7 +7,7 @@ import Page from "@alicloud/console-components-page";
 import ConsoleMenu from "@alicloud/console-components-console-menu";
 import "@alicloud/console-components/dist/wind.css";
 
-// TODO: esmodule interop
+// TODO: esm-cjs interop
 const { Button, DatePicker } = ConsoleComponents;
 
 const menuItems = [
