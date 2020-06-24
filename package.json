@@ -2,7 +2,7 @@
   "name": "test-vite",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite serve src --force",
+    "dev": "vite serve src",
     "debug": "npx --node-arg=--inspect vite serve src --force",
     "debug:build": "npx --node-arg=--inspect vite build src --outDir dist",
     "clean": "rm -rf node_modules/.vite_opt_cache",
