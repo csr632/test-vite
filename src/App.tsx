@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
 // axios is a commonjs package
 import axios from "axios";
 
-import "./App.css";
+import s from "./App.module.css";
 import Counter from "./Counter";
 
-const Box = styled.div`
-  border: 1px solid red;
-`;
 
 function App() {
   const [data, setData] = useState(null);
@@ -22,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <Box className="App">
+    <div className={s.box}>
       <p>Box2</p>
       <Counter />
       <hr />
@@ -32,7 +28,7 @@ function App() {
       ) : (
         <p>Loading data...</p>
       )}
-    </Box>
+    </div>
   );
 }
 
