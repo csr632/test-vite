@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import s from "./Counter.module.css";
+
 
 const Counter = () => {
   const [count, setCount] = useState(0);
   return (
-    <div>
+    <div className={s.counter}>
       <p>Counter</p>
       <button
         onClick={() => {

@@ -3,11 +3,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import s from "./App.module.css";
-import Counter from "./Counter";
-
 
 function App() {
   const [data, setData] = useState(null);
+
+  const [CounterComponent, setCounterComponent] = useState<any>(null);
 
   useEffect(() => {
     axios
@@ -15,12 +15,16 @@ function App() {
       .then((value) => {
         setData(value.data[0].children[0]);
       });
+
+    import("./Counter").then((m) => {
+      setCounterComponent(() => m.default);
+    });
   }, []);
 
   return (
     <div className={s.box}>
       <p>Box2</p>
-      <Counter />
+      {CounterComponent ? <CounterComponent /> : "Loading..."}
       <hr />
       <p>Load data using axios:</p>
       {data ? (
