@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 // axios is a commonjs package
 import axios from "axios";
 
-import s from "./App.module.css";
+import "./App.scss";
 import Counter from "./Counter";
-
 
 function App() {
   const [data, setData] = useState(null);
@@ -18,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <div className={s.box}>
+    <div className="box">
       <p>Box2</p>
       <Counter />
       <hr />
