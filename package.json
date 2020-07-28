@@ -14,10 +14,10 @@
     "axios": "^0.19.2"
   },
   "devDependencies": {
-    "@types/react": "^16.9.41",
+    "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
-    "typescript": "^3.9.6",
-    "vite": "^1.0.0-beta.11",
-    "vite-plugin-react": "^3.0.1"
+    "typescript": "^3.9.7",
+    "vite": "^1.0.0-rc.3",
+    "vite-plugin-react": "^3.0.2"
   }
 }
