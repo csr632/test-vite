@@ -12,10 +12,11 @@ module.exports = {
           if (importee.endsWith("Counter")) {
             const resolveRes = await this.resolve(importee, importer, {
               skipSelf: true,
-            })!;
+            });
+            if (!resolveRes) throw new Error("assertion fail");
             this.emitFile({
               type: "chunk",
-              id: resolveRes?.id!,
+              id: resolveRes.id,
             });
             return resolveRes;
           }
