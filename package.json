@@ -9,7 +9,7 @@
     "build": "vite build src --outDir dist"
   },
   "dependencies": {
-    "@alicloud/console-components": "^1.0.26",
+    "@alicloud/console-components": "^1.1.0",
     "@alicloud/console-components-app-layout": "^1.0.8",
     "@alicloud/console-components-console-menu": "^1.0.7",
     "@alicloud/console-components-page": "^1.0.11",
@@ -19,11 +19,11 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
-    "@types/react": "^16.9.38",
+    "@types/react": "^16.9.46",
     "@types/react-dom": "^16.9.8",
-    "@types/styled-components": "^5.1.0",
-    "typescript": "^3.9.5",
-    "vite": "^1.0.0-beta.6",
-    "vite-plugin-react": "^3.0.1"
+    "@types/styled-components": "^5.1.2",
+    "typescript": "^3.9.7",
+    "vite": "^1.0.0-rc.4",
+    "vite-plugin-react": "^3.0.2"
   }
 }
