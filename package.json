@@ -8,14 +8,13 @@
     "clean": "rm -rf node_modules/.vite_opt_cache",
     "build": "vite build src --outDir dist"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1",
-    "axios": "^0.19.2"
-  },
-  "devDependencies": {
     "@types/react": "^16.9.46",
     "@types/react-dom": "^16.9.8",
+    "antd": "^4.5.3",
     "typescript": "^3.9.7",
     "vite": "^1.0.0-rc.4",
     "vite-plugin-react": "^3.0.2"
