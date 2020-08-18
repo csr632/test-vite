@@ -1,34 +1,27 @@
-import React, { useState, useEffect } from "react";
-// axios is a commonjs package
-import axios from "axios";
+import React, { Suspense } from "react";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 
-import s from "./App.module.css";
-import Counter from "./Counter";
-
+const Page1 = React.lazy(() => import("./Page1"));
+const Page2 = React.lazy(() => import("./Page2"));
 
 function App() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    axios
-      .get("https://os.alipayobjects.com/rmsportal/ODDwqcDFTLAguOvWEolX.json")
-      .then((value) => {
-        setData(value.data[0].children[0]);
-      });
-  }, []);
-
   return (
-    <div className={s.box}>
-      <p>Box2</p>
-      <Counter />
-      <hr />
-      <p>Load data using axios:</p>
-      {data ? (
-        <pre>{JSON.stringify(data, null, 2)}</pre>
-      ) : (
-        <p>Loading data...</p>
-      )}
-    </div>
+    <BrowserRouter>
+      <ul>
+        <li>
+          <Link to="/page1">page1</Link>
+        </li>
+        <li>
+          <Link to="/page2">page2</Link>
+        </li>
+      </ul>
+      <Suspense fallback="Loading...">
+        <Switch>
+          <Route path="/page1" component={Page1}></Route>
+          <Route path="/page2" component={Page2}></Route>
+        </Switch>
+      </Suspense>
+    </BrowserRouter>
   );
 }
 
