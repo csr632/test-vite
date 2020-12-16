@@ -20,7 +20,7 @@
     "vite": "^1.0.0-rc.13",
     "vite-pages-theme-basic": "^0.9.1",
     "vite-plugin-mdx": "^0.4.1",
-    "vite-plugin-react": "^4.0.1",
+    "vite-plugin-react": "^3.0.2",
     "vite-plugin-react-pages": "^0.8.3"
   },
   "demoDependencies": {

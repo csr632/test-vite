@@ -307,13 +307,6 @@
     "@babel/plugin-syntax-object-rest-spread" "^7.8.0"
     "@babel/plugin-transform-parameters" "^7.12.1"
 
-"@babel/plugin-syntax-import-meta@^7.10.4":
-  version "7.10.4"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-import-meta/-/plugin-syntax-import-meta-7.10.4.tgz#ee601348c370fa334d2207be158777496521fd51"
-  integrity sha512-Yqfm+XDx0+Prh3VSeEQCPU81yC+JWZ2pDPFSS4ZdpfZhp4MkFMaDC1UqseovEKwSUpnIL7+vK+Clp7bfh0iD7g==
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.10.4"
-
 "@babel/plugin-syntax-jsx@7.12.1", "@babel/plugin-syntax-jsx@^7.12.1":
   version "7.12.1"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.12.1.tgz#9d9d357cc818aa7ae7935917c1257f67677a0926"
@@ -4961,15 +4954,6 @@ vite-plugin-react@^3.0.2:
   integrity sha512-W+OdAWuvSddOJDKbHMeyOihLGnMj8pxo7STH3ATn7FZ/3zvcsZKXSlDWmdRtodeMQJJ8odKlDCheVeTFsQJ/vg==
   dependencies:
     "@babel/core" "^7.9.6"
-    react-refresh "^0.8.2"
-
-vite-plugin-react@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/vite-plugin-react/-/vite-plugin-react-4.0.1.tgz#5dd04f20ec4ebd17ca52f53a3faac51255ebb0d8"
-  integrity sha512-liDo/wxTcy2E5cptwsAUZIC0F4flxWkmcPOJdhKCzJIC9XguWCCJimzziTQRmHuqIPawmQNE8PJb8+RlGzNxOA==
-  dependencies:
-    "@babel/core" "^7.9.6"
-    "@babel/plugin-syntax-import-meta" "^7.10.4"
     react-refresh "^0.8.2"
 
 vite@^1.0.0-rc.13:
