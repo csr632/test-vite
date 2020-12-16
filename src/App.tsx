@@ -1,35 +1,28 @@
 import React, { useState, useEffect } from "react";
-// axios is a commonjs package
-import axios from "axios";
 
 import s from "./App.module.css";
-import Counter from "./Counter";
 
+import util1 from "./util1";
+import util2 from "./util2";
 
 function App() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    axios
-      .get("https://os.alipayobjects.com/rmsportal/ODDwqcDFTLAguOvWEolX.json")
-      .then((value) => {
-        setData(value.data[0].children[0]);
-      });
-  }, []);
-
   return (
     <div className={s.box}>
       <p>Box2</p>
-      <Counter />
-      <hr />
-      <p>Load data using axios:</p>
-      {data ? (
-        <pre>{JSON.stringify(data, null, 2)}</pre>
-      ) : (
-        <p>Loading data...</p>
-      )}
+      <p>util1: {util1}</p>
+      <p>util2: {util2}</p>
     </div>
   );
 }
 
 export default App;
+
+if (import.meta.hot) {
+  import.meta.hot!.acceptDeps("./util1", (newMod) => {
+    console.log("acceptDeps util1:", newMod);
+  });
+
+  import.meta.hot!.acceptDeps("./util2", (newMod) => {
+    console.log("acceptDeps util2:", newMod);
+  });
+}
