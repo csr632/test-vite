@@ -1,35 +1,45 @@
-import React, { useState, useEffect } from "react";
-// axios is a commonjs package
-import axios from "axios";
-
-import s from "./App.module.css";
-import Counter from "./Counter";
-
+import React, { useState } from 'react'
+import logo from './logo.svg'
+import './App.css'
 
 function App() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    axios
-      .get("https://os.alipayobjects.com/rmsportal/ODDwqcDFTLAguOvWEolX.json")
-      .then((value) => {
-        setData(value.data[0].children[0]);
-      });
-  }, []);
+  const [count, setCount] = useState(0)
 
   return (
-    <div className={s.box}>
-      <p>Box2</p>
-      <Counter />
-      <hr />
-      <p>Load data using axios:</p>
-      {data ? (
-        <pre>{JSON.stringify(data, null, 2)}</pre>
-      ) : (
-        <p>Loading data...</p>
-      )}
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>Hello Vite + React!</p>
+        <p>
+          <button onClick={() => setCount((count) => count + 1)}>
+            count is: {count}
+          </button>
+        </p>
+        <p>
+          Edit <code>App.tsx</code> and save to test HMR updates.
+        </p>
+        <p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+          {' | '}
+          <a
+            className="App-link"
+            href="https://vitejs.dev/guide/features.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Vite Docs
+          </a>
+        </p>
+      </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

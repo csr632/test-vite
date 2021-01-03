@@ -1,7 +1,6 @@
-import type { UserConfig } from "vite";
-import * as vpr from "vite-plugin-react";
+import reactRefresh from '@vitejs/plugin-react-refresh'
+import { defineConfig } from 'vite'
 
-module.exports = {
-  jsx: "react",
-  plugins: [vpr],
-} as UserConfig;
+export default defineConfig({
+  plugins: [reactRefresh()]
+})
