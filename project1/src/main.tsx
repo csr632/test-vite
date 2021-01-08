@@ -1,8 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-// import { util } from "../../project2/util";
+// import { util } from "/absolute/path/to/project2/util";
 import { util } from "/home/csr/test-vite/project2/util";
+
+// @ts-ignore
+// import { aliasTarget } from "/@@aliasTarget";
 
 ReactDOM.render(
   <React.StrictMode>
