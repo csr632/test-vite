@@ -1,0 +1,31 @@
+{
+  "name": "library-demos",
+  "version": "1.0.2",
+  "private": true,
+  "scripts": {
+    "dev": "vite serve --config ./vite.demos.ts",
+    "build": "rm -rf dist && vite build --config ./vite.demos.ts --outDir dist && serve -s dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.20",
+    "@types/react": "^17.0.0",
+    "@types/react-router-dom": "^5.1.7",
+    "@vitejs/plugin-react-refresh": "^1.1.1",
+    "globby": "^11.0.2",
+    "my-button": "*",
+    "my-card": "*",
+    "serve": "^11.3.2",
+    "vite": "^2.0.0-beta.12",
+    "vite-pages-theme-basic": "^2.0.0",
+    "vite-plugin-mdx": "^2.0.0",
+    "vite-plugin-react-pages": "^2.0.0"
+  }
+}

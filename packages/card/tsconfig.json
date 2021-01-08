@@ -1,9 +1,6 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "my-card": ["./src"]
-    }
+    "outDir": "lib"
   }
 }

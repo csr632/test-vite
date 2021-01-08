@@ -1,29 +1,16 @@
 {
   "name": "my-button",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "dev": "vite serve --config ./vite.config.ts",
-    "build-docs": "rm -rf docs-dist && vite build --config ./vite.config.ts && serve -s docs-dist",
-    "build-docs-ssr": "rm -rf docs-dist && vite-pages ssr --config ./vite.config.ts && serve docs-dist"
+    "build": "rm -rf ./lib && tsc && node ../../script/copy.js"
   },
-  "dependencies": {
-    "@pika/react": "^16.13.1",
-    "@pika/react-dom": "^16.13.1"
-  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@types/react": "^16.9.46",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "serve": "^11.3.2",
-    "typescript": "^4.1.3",
-    "vite": "^1.0.0-rc.13",
-    "vite-pages-theme-basic": "^0.9.1",
-    "vite-plugin-mdx": "^0.4.1",
-    "vite-plugin-react": "^3.0.2",
-    "vite-plugin-react-pages": "^0.8.3"
-  },
-  "demoDependencies": {
-    "my-button": "~0.0.1"
+    "@types/react": "^17.0.0",
+    "react": "^17.0.1",
+    "typescript": "^4.1.3"
   }
 }

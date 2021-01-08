@@ -9,5 +9,5 @@ export default createTheme({
       href: 'https://github.com/vitejs/vite-plugin-react-pages',
     },
   ],
-  logo: 'My Button',
+  logo: 'Vite Pages',
 })
