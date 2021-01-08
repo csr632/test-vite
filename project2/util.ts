@@ -1,4 +1,1 @@
-// @ts-ignore
-import { aliasTarget } from "/@@aliasTarget";
-
-export const util = "Util" + aliasTarget;
+export const util = "Util22";
