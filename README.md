@@ -1,7 +1,14 @@
-## vite-pages library-monorepo starter
+## vite monorepo starter
 
-This is a demo project for [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages).
+This is a demo monorepo project for [vite](https://github.com/vitejs/vite).
 This project demonstrate how to develop libraries **in monorepo** using vite as your local develop envirenment.
+
+This is a valilla setup to show how to make vite wrok with monorepo. It Use full power of Typescript!
+
+For a more smooth workflow for bigger project. Checkout [this demo project](https://github.com/csr632/test-vite/tree/lib-monorepo), which use [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages) to:
+
+- Put demos close to their related components source code.
+- Use fileSystem-based routing, so that you don't need to warry about routing setup of the demos.
 
 # How to use
 
@@ -13,8 +20,6 @@ This project demonstrate how to develop libraries **in monorepo** using vite as 
 
 Edit `packages/button/src/index.tsx` or other souce files, the demos will inflect your change instantly.
 Edit `packages/button/demos/demo1.tsx` or other demo files, the demos will inflect your change instantly.
-
-`yarn build` The demos are built and served.
 
 ---
 
