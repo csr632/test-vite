@@ -3,6 +3,13 @@
 This is a demo project for [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages).
 This project demonstrate how to develop libraries **in monorepo** using vite as your local develop envirenment.
 
+> This workflow also use yarn workspace and Typescript.
+
+What are the improvements of this setup, compared with [the valilla vite setup](https://github.com/csr632/test-vite/tree/vanilla-monorepo):
+
+- Put demos close to their related components source code.
+- Use filesystem-based routing, so that you don't need to warry about routing setup of the demos.
+
 # How to use
 
 `yarn` (require yarn 1.x)
