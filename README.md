@@ -5,9 +5,9 @@ This project demonstrate how to develop libraries **in monorepo** using vite as 
 
 > This workflow also use yarn workspace and Typescript.
 
-This is a valilla setup to show how to make vite wrok with monorepo. For a more smooth workflow for bigger project. Checkout [this demo project](https://github.com/csr632/test-vite/tree/lib-monorepo), which use [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages) to:
+This is a valilla setup to show how to make vite wrok with monorepo. For a more smooth workflow for bigger project(more demos), checkout [this demo project](https://github.com/csr632/test-vite/tree/lib-monorepo), which use [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages) to:
 
-- Put demos close to their related components source code.
+- Put demos closed to their related components source code.
 - Use filesystem-based routing, so that you don't need to warry about routing setup of the demos.
 
 # How to use
