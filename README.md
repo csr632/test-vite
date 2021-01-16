@@ -8,7 +8,7 @@ This is a valilla setup to show how to make vite wrok with monorepo. It Use full
 For a more smooth workflow for bigger project. Checkout [this demo project](https://github.com/csr632/test-vite/tree/lib-monorepo), which use [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages) to:
 
 - Put demos close to their related components source code.
-- Use fileSystem-based routing, so that you don't need to warry about routing setup of the demos.
+- Use filesystem-based routing, so that you don't need to warry about routing setup of the demos.
 
 # How to use
 
