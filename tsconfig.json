@@ -13,11 +13,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "preserveWatchOutput": true,
-    "baseUrl": ".",
-    "paths": {
-      "my-button": ["./packages/button/src/index.tsx"],
-      "my-card": ["./packages/card/src/index.tsx"]
-    }
+    "preserveWatchOutput": true
   }
 }

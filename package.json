@@ -7,5 +7,9 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "fs-extra": "^9.0.1",
+    "globby": "^11.0.2"
+  }
 }
