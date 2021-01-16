@@ -63,8 +63,7 @@ module.exports = {
     }),
   ],
   alias: {
-    'my-button': path.resolve(__dirname, '../button/src'),
-    'my-card': path.resolve(__dirname, '../card/src'),
-  },
-  minify: false,
+    'my-button': 'my-button/src/index.tsx',
+    'my-card': 'my-card/src/index.tsx'
+  }
 } as UserConfig
